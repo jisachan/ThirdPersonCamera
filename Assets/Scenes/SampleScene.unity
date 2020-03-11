@@ -395,9 +395,8 @@ GameObject:
   - component: {fileID: 764572520}
   - component: {fileID: 764572519}
   - component: {fileID: 764572518}
-  - component: {fileID: 764572517}
-  - component: {fileID: 764572524}
   - component: {fileID: 764572522}
+  - component: {fileID: 764572517}
   m_Layer: 8
   m_Name: MainCharacter
   m_TagString: Untagged
@@ -511,18 +510,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &764572524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764572516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6372d77628e4d49b0070bea5911307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &879703258
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 879703258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 31.34, y: 2.9018052, z: 4.77}
-  m_LocalScale: {x: 10.44, y: 6.71, z: 1.0625}
+  m_LocalScale: {x: 6.503389, y: 6.71, z: 1.0625}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -712,24 +699,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e03646eba9e62b24dacf9be6ed4fdbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 5
-  cursorvisibility: 1
-  cursorlockstate: 1
-  zoomSpeed: 10
-  maxZoomDistance: 151.51
-  minZoomDistance: 0
   target: {fileID: 1533945558}
   player: {fileID: 764572521}
-  distanceFromTarget: 8
-  adjustmentDistance: -8
-  drawDesiredCollisionLines: 1
-  drawAdjustedCollisionLines: 1
+  smoothFollow: 0
+  smooth: 0.05
   collision:
     collisionLayer:
       serializedVersion: 2
       m_Bits: 55
     collisionSpaceSize: 3.41
-  destination: {x: 0, y: 0, z: 0}
+  rotationSpeed: 3
+  cameraFreeMovementKey: 304
+  cursorvisibility: 1
+  cursorlockstate: 1
+  zoomSpeed: 25
+  maxZoomDistance: 151.51
+  minZoomDistance: 0
+  distanceFromTarget: 8
+  adjustmentDistance: -8
+  drawDesiredCollisionLines: 1
+  drawAdjustedCollisionLines: 1
 --- !u!1 &1138544932
 GameObject:
   m_ObjectHideFlags: 0
